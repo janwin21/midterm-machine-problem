@@ -38,13 +38,16 @@
             <h5 id="offcanvasRightLabel">Edit Place Name</h5>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <!-- Card Component -->
+
+        <!-- Update Card Container -->
+        <div class="card" style="width: 100%;">
             <!-- Image src MODIFY -->
-            <img img src="./images/sample.png" class="card-img-top" id="card-img-hover" alt="sample-img" style="cursor: pointer;">
-            <button type="button" class="btn btn-secondary btn-sm mb-2" id="card-img-button" style="display: none">Click the Photo</button>
+            <img img src="./images/sample.png" class="card-img-top" id="card-img-hover" alt="sample-img" >
+            <div class="bg-secondary mb-1" style="width: 100%; height: 3em;"></div>
             <div class="card-body">
-                <form id="form" action="" method="GET" enctype="multipart/form-data">
+                <form id='form' action="" method="GET" enctype="multipart/form-data">
                     @csrf
+                    {{ method_field('PUT') }}
 
                     <input type="text" class="form-control card-title mb-1 shadow-none" id="firstname" name="firstname" placeholder="firstname">
                     <input type="text" class="form-control card-title mb-1 shadow-none" id="lastname" name="lastname" placeholder="lastname">
@@ -73,7 +76,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                     <label class="card-text mb-0">Tell me about yourself...</label>
                     <textarea class="form-control card-text mb-3 shadow-none" id="description" name="description" rows="3"></textarea>
@@ -83,9 +85,10 @@
                     <input type="text" id="card-status" name="status" style="display: none;">
 
                     <!-- Submit Buttons -->
-                    <button type="submit" name="create" class="btn btn-success btn-sm">Save</button>
+                    <button type="submit" name="save" class="btn btn-success btn-sm">Save</button>
                 </form>
             </div>
         </div>
+
     </div>
 @endsection

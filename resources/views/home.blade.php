@@ -12,7 +12,7 @@
                 <h1 class="display-5 fw-bold lh-1 mb-3">Student Attendance</h1>
                 <p class="lead">A simple web application that manage a simple CRUD technique from integrating database. This is a back-end server supported by <i><strong>Laravel</strong></i></strong>.</p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <a href="{{ url('/collection') }}"><button type="button" class="btn btn-success">Go to Collection</button><a>
+                    <a href="{{ url('/collection') }}"><button type="button" class="btn btn-success">Go to Class</button><a>
                 </div>
             </div>
         </div>

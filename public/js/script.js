@@ -36,7 +36,7 @@ $(document).ready(() => {
                         description = 'Wow! You travelled this placed.';
                         break;
                     case 'late':
-                        bgColor = 'toast-header bg-primary';
+                        bgColor = 'toast-header bg-warning';
                         logo = 'fas fa-spinner';
                         description = 'Nice! Let set a schedule now!';
                         break;
