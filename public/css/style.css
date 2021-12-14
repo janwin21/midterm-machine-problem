@@ -1,0 +1,59 @@
+input, textarea {
+    border-radius: 0 !important;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: white;
+}
+
+.main-icon {
+    width: 3em;
+    height: auto;
+    margin-right: 1em;
+}
+
+.btn {
+    border-radius: 0 !important;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.btn:active {
+    opacity: 0.5;
+}
+
+.nav-link:hover {
+    color: green;
+}
+
+.invi {
+    background-color: rgb(0, 0, 0, 0);
+    border: none;
+}
+
+.fa-plus-square {
+    font-size: 3em;
+    transition: color 0.25s ease-out,
+                font-size 0.25s ease-out;
+}
+
+.fa-plus-square:hover {
+    color: gray !important;
+    font-size: 3.25em;
+}
+
+.fa-plus-square:active {
+    opacity: 0.9;
+}
+
+.card-body span {
+    text-transform: capitalize;
+}
